@@ -1,0 +1,124 @@
+.CartContainer {
+  max-width: 1600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.CartTitle {
+  margin-bottom: 40px;
+}
+
+.CartTitle:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgb(209, 209, 209);
+  display: block;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CartTitleHeading {
+}
+
+.totalPrice {
+  font-weight: 500;
+}
+
+.productCard {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 9px 0 rgb(231, 231, 231);
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.sr {
+  font-size: 24px;
+  width: 30px;
+}
+
+.CardImg {
+  max-width: 80px;
+  flex: 1;
+}
+
+.tp {
+  margin: 0 10px;
+  margin-left: 20px;
+  max-width: 1000px;
+  flex: 1;
+}
+
+.title {
+  cursor: pointer;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.price {
+}
+
+.quantityAdjust {
+  margin: 0 10px;
+  max-width: 200px;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.subQty,
+.addQty {
+  padding: 12px 18px;
+  background-color: rgb(162, 162, 162);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-size: 18px;
+}
+
+.subQty:hover,
+.addQty:hover {
+  background-color: rgb(129, 129, 129);
+}
+
+.quantity {
+  font-size: 24px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.deleteBtn {
+  flex: 1;
+  max-width: 100px;
+  text-align: center;
+}
+
+.delBtn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: rgb(225, 98, 98);
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.delBtn:hover {
+  background-color: rgb(228, 75, 75);
+}

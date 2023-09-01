@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.productImage {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  max-width: 900px;
+}
+
+.productImg {
+  border-radius: 20px;
+  max-width: 500px;
+  object-fit: contain;
+}
+
+.productDetails {
+  flex: 1;
+  padding: 20px;
+  max-width: 700px;
+  min-width: 350px;
+}
+
+.details {
+  box-shadow: 0 0 7px 0 rgb(211, 211, 211);
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.price {
+  font-size: 18px;
+}
+
+.rating {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.ratingLogo {
+  color: gold;
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: middle;
+  filter: drop-shadow(0 0 0.75rem gold);
+  margin-left: 5px;
+}
+
+.ratingCount {
+  font-size: 12px;
+}
+
+.quantity {
+  padding: 10px 0;
+}
+
+.qtyLabel {
+  font-size: 18px;
+  padding-right: 25px;
+}
+
+.decQty {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 7px 0 rgb(209, 209, 209);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.qtyValue {
+  max-width: 50px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 7px 0 rgb(209, 209, 209);
+  display: inline;
+  text-align: center;
+}
+
+.incQty {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 7px 0 rgb(209, 209, 209);
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+}
+
+.btncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.Check_out {
+  width: 60%;
+  padding: 10px 0px;
+  margin-bottom: 20px;
+  background-color: #0b3e7f;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 7px 0 rgb(171, 171, 171);
+}
+
+.Check_out:hover {
+  background-color: #245ba2;
+}
+
+@media (max-width: 950px) {
+  .productImg {
+    border-radius: 20px;
+    max-width: 300px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 800px) {
+  .productImg {
+    border-radius: 20px;
+    max-width: 250px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 360px) {
+  .qtyLabel {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+}
