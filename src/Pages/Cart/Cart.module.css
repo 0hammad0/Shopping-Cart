@@ -22,6 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .CartTitleHeading {
@@ -34,20 +35,22 @@
 .productCard {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   box-shadow: 0 0 9px 0 rgb(231, 231, 231);
   padding: 20px;
   border-radius: 20px;
   margin-top: 20px;
 }
 
-.sr {
-  font-size: 24px;
-  width: 30px;
+.box1 {
+  display: flex;
+  flex: 1;
 }
 
 .CardImg {
   max-width: 80px;
   flex: 1;
+  object-fit: contain;
 }
 
 .tp {
@@ -104,6 +107,7 @@
 .deleteBtn {
   flex: 1;
   max-width: 100px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -121,4 +125,41 @@
 
 .delBtn:hover {
   background-color: rgb(228, 75, 75);
+}
+
+@media (max-width: 850px) {
+  .title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .productCard {
+    flex-direction: column;
+    align-items: start;
+    row-gap: 20px;
+  }
+
+  .box1 {
+    max-width: 500px;
+    flex: 1;
+  }
+
+  .quantityAdjust {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .box1 {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .CardImg {
+    margin: 0 auto;
+  }
 }

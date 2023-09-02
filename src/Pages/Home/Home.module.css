@@ -82,6 +82,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  transition: 0.3s ease-in-out;
 }
 
 .cardProduct:hover {
@@ -204,6 +206,24 @@
   .categoryBtn {
     transform: translateX(0%);
     opacity: 1;
+  }
+}
+
+@media (max-width: 709px) {
+  .cardProduct {
+    max-width: 315px;
+  }
+}
+
+@media (max-width: 709px) {
+  .cardProduct {
+    max-width: 287px;
+  }
+}
+
+@media (max-width: 643px) {
+  .cardProduct {
+    max-width: 315px;
   }
 }
 

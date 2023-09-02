@@ -36,19 +36,20 @@ export const Cart = () => {
 
   const renderCardCart =
     cart &&
-    cart.map((cart, index) => {
+    cart.map((cart) => {
       return (
         <div className={styles.productCard} key={cart.id}>
-          <p className={styles.sr}>{index + 1}. </p>
-          <img src={cart.image} alt={cart.title} className={styles.CardImg} />
-          <div className={styles.tp}>
-            <h2
-              className={styles.title}
-              onClick={() => navigate(`/product-detail/${cart.id}`)}
-            >
-              {cart.title}
-            </h2>
-            <p className={styles.price}>$ {cart.price}</p>
+          <div className={styles.box1}>
+            <img src={cart.image} alt={cart.title} className={styles.CardImg} />
+            <div className={styles.tp}>
+              <h2
+                className={styles.title}
+                onClick={() => navigate(`/product-detail/${cart.id}`)}
+              >
+                {cart.title}
+              </h2>
+              <p className={styles.price}>$ {cart.price}</p>
+            </div>
           </div>
 
           <div className={styles.quantityAdjust}>

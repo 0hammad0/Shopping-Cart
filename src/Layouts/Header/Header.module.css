@@ -135,7 +135,7 @@
   opacity: 1 !important;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .list {
     position: absolute;
     width: 100%;

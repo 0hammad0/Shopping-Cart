@@ -136,3 +136,9 @@
   font-size: 20px;
   font-weight: 500;
 }
+
+@media (max-width: 730px) {
+  .SideBar {
+    display: none;
+  }
+}

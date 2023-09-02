@@ -22,7 +22,9 @@ export const Header = (props) => {
       ></div>
       <header className={styles.header}>
         <nav className={styles.navbar}>
-          <img src={Logo} alt="Easy Shope Logo" className={styles.logoImg} />
+          <NavLink to="/">
+            <img src={Logo} alt="Easy Shope Logo" className={styles.logoImg} />
+          </NavLink>
 
           <ul className={`${styles.list} ${hamburger ? styles.nav__open : ""}`}>
             <li className={styles.list_items}>
@@ -79,10 +81,7 @@ export const Header = (props) => {
           </ul>
 
           <div className={styles.right_nav}>
-            <a
-              className={`${styles.item} ${styles.cart}`}
-              onClick={() => setSlider(!slider)}
-            >
+            <NavLink to="/cart" className={`${styles.item} ${styles.cart}`}>
               <span
                 className={`${
                   cart.length === 0 ? styles.cartCountHide : styles.cartCount
@@ -91,7 +90,7 @@ export const Header = (props) => {
                 {cart.length}
               </span>
               <ion-icon name="cart-outline"></ion-icon>
-            </a>
+            </NavLink>
 
             <div
               className={`${styles.hamburger} ${
